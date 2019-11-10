@@ -4,8 +4,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadOrderByExecutor {
-    private static ExecutorService executor = Executors.newSingleThreadExecutor();
     public static void main(String[] args) throws InterruptedException {
+        ExecutorService executor = Executors.newSingleThreadExecutor();
         Thread thread1 = new Thread(new Runnable() {
             public void run() {
                 System.out.println("thread 1");
